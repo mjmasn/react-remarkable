@@ -7,9 +7,12 @@ class Remarkable extends React.Component {
 
   render() {
     var Container = this.props.container;
+    var className = this.props.className;
+
+    className = className ? className+' Markdown' : 'Markdown';
 
     return (
-      <Container>
+      <Container className={className}>
         {this.content()}
       </Container>
     );
