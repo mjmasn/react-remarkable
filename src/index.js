@@ -33,7 +33,7 @@ class Remarkable extends React.Component {
       this.md = new Markdown(this.props.options);
     }
 
-    return this.md.render(source);
+    return this.md.renderInline(source);
   }
 }
 
