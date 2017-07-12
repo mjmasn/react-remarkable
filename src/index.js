@@ -33,7 +33,7 @@ class Remarkable extends React.Component {
       this.md = new Markdown(this.props.options);
     }
 
-    var inline = typeof this.props.inline === undefined ? true : this.props.inline;
+    var inline = this.props.inline === false ? false : true;
 
     if (inline) {
       return this.md.renderInline(source);
