@@ -25,6 +25,14 @@ class Remarkable extends React.Component {
   content() {
     if (this.props.source) {
       return this.renderMarkdown(this.props.source);
+    } else {
+      return React.Children.map(this.props.children, (child) => {
+        if (typeof child === 'string') {
+          return this.renderMarkdown(this.props.source);
+        } else {
+          return child;
+        }
+      });
     }
   }
 
