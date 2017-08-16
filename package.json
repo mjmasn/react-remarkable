@@ -1,6 +1,6 @@
 {
   "name": "@elaura/react-remarkable",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "A React component for rendering Markdown with remarkable",
   "main": "dist/index.js",
   "repository": {
